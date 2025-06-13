@@ -12,7 +12,7 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-mainClassName = 'projectFinal.Main'
+mainClassName = 'PROJECT-FINAL-LAB.Main'
 
 java {
     toolchain {
