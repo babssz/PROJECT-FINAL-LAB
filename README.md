@@ -105,12 +105,6 @@ Kelas opsional sebagai pengatur alur jika arsitektur modular/MVC digunakan.
 
 ---
 
-
-## Pembagian Tugas
-
-
-
-
 ## Author
 
 | Nama                          | GitHub                                            |
