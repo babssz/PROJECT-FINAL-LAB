@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectFinal.MainViewController">
+   <top>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Galeri Properti Rumah Impian">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <ComboBox fx:id="lokasiFilter" promptText="Filter Lokasi" />
+                  <TextField fx:id="hargaMinFilter" promptText="Harga Minimum" />
+                  <TextField fx:id="hargaMaxFilter" promptText="Harga Maksimum" />
+                  <Button fx:id="terapkanFilterButton" mnemonicParsing="false" text="Terapkan" />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <center>
+      <TableView fx:id="propertiTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="kolomGambar" prefWidth="150.0" text="Gambar" />
+            <TableColumn fx:id="kolomAlamat" prefWidth="250.0" text="Alamat" />
+            <TableColumn fx:id="kolomHarga" prefWidth="150.0" text="Harga" />
+            <TableColumn fx:id="kolomSpesifikasi" prefWidth="250.0" text="Spesifikasi" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
